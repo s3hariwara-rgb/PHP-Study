@@ -4,4 +4,10 @@
 $num = 7;
 
 // TODO: ここにコードを追記
-echo $num;
+if($num < 10){
+    echo"1桁の数です\n";
+}
+
+if($num >= 10){
+    echo"2桁の数です\n";
+}

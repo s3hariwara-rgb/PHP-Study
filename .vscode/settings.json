@@ -1,10 +1,11 @@
 {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.tabSize": 4,
-    "editor.suggest.showSnippets": false,
-    "php.validate.executablePath": null,
-    "intelephense.diagnostics.undefinedFunctions": true,
-    "intelephense.diagnostics.undefinedVariables": true
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true
 }

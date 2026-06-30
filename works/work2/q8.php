@@ -10,3 +10,9 @@ $products = array(
     "ファイル" => 2000,
     "定規" => 300,
 );
+
+foreach($products as $key => $value){
+    if($value >= 1500){
+        echo "$key は1500円以上です\n";
+    }
+}

@@ -9,3 +9,18 @@
 // 出力例 「johnの評価は良です」
 
 $scores = array("John" => 85, "Jane" => 92, "Jim" => 78);
+
+foreach ($scores as $hari){
+    if($hari >= 90){
+        echo "優\n";
+    }
+    if($hari >= 80 & $hari < 90){
+        echo "良\n";
+    }
+    if($hari >= 70 & $hari < 80){
+        echo "可\n";
+    }
+    if($hari < 70){
+        echo "不可\n";
+    }
+}

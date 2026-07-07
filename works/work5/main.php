@@ -3,8 +3,8 @@
 // Userクラスの読み込み
 require 'User.php';
 
-$mainUser = new User(1111, "田中", 21);
-$subUser = new User(2222, "伊藤", 21);
+$mainUser = new User(1111, "田中", 21, "");
+$subUser = new User(2222, "伊藤", 21 ,"大阪");
 
 showUserStatus($mainUser);
 showUserStatus($subUser);

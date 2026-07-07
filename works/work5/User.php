@@ -5,13 +5,15 @@ class User {
     private int $id;
     private string $name;
     private int $age;
+    private string $address;
     // ↑フィールド============================
 
     // コンストラクタ
-    function __construct(int $id, string $name, int $age) {
+    function __construct(int $id, string $name, int $age, string $address) {
         $this->id = $id;
         $this->name = $name;
         $this->age = $age;
+        $this->address = $address;
     }
 
     // idを取得
@@ -37,6 +39,18 @@ class User {
     // 年齢を取得
     function getAge(): int {
         return $this->age;
+    }
+
+    function setaddress(string $address):void{
+        
+        if($address = setaddress(array())){
+            echo"住所を空にはできません\n";
+            };
+        $this->address = $address;
+    }
+
+    function getaddress():string{
+        return $this->address;
     }
 
     // 問題3

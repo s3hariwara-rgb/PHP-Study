@@ -3,16 +3,19 @@ class Gun {
 
     // ↓フィールド============================
     // 銃の名前
-    private $name;
+    private string $name;
     // 最大装弾数
-    private $maxMagazine;
+    private int $maxMagazine;
     // 残弾
-    private $currentMagazine;
+    private int $currentMagazine;
     // ↑フィールド============================
 
     // コンストラクタ
-    function __construct($name, $maxMagazine) {
+    function __construct(string $name, int $maxMagazine) {
         // 問題1
+        $this->name = $name;
+        $this->maxMagazine = $maxMagazine;
+        $this->currentMagazine = 0;
     }
 
     // 現在の状態を表示
@@ -25,13 +28,30 @@ class Gun {
     }
 
     // リロード
-    function reload() {
+    function reload():void {
         // 問題2
+        if($this->currentMagazine == $this->maxMagazine){
+            echo "リロードの必要はありません";
+        }
+        else{
+            $this->currentMagazine = $this->maxMagazine;
+        }
     }
 
     // 発砲
-    function fire() {
+    function fire():string {
         // 問題3
+        if($this->currentMagazine == 0){
+            echo "リロードしてください";
+        }
+        else{
+            $this->currentMagazine--;
+            echo $this->name."を発砲しました\n";
+        }
+       if($this->currentMagazine == 0){
+            echo "リロードしてください";
+        } 
+        return $this->currentMagazine;
     }
 
     // 拡張マガジンを装着

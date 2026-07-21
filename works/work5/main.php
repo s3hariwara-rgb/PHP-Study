@@ -9,9 +9,8 @@ $subUser = new User(2222, "伊藤", 21 ,"大阪");
 showUserStatus($mainUser);
 showUserStatus($subUser);
 
-$mainUser->setName("佐藤");
-$mainUser->setAge(160);
-$mainUser->setaddress("");
+
+$mainUser->getOlder();
 
 showUserStatus($mainUser);
 showUserStatus($subUser);
